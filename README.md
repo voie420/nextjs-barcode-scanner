@@ -43,7 +43,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ⚠️ This project is free for everyone to use without the need for credit. However, please refrain from distributing it.
 
-## Settings
+## Barcodes
 
 Depending on the barcodes you are trying to scan you can adjust the reader property of Quagga.
 
@@ -58,4 +58,25 @@ Quagga.decodeSingle(
   },
   callback,
 );
+```
+
+Supported barcode readers.
+
+```json
+{
+  code_128_reader
+  ean_reader
+  ean_5_reader
+  ean_2_reader
+  ean_8_reader
+  code_39_reader
+  code_39_vin_reader
+  codabar_reader
+  upc_reader
+  upc_e_reader
+  i2of5_reader
+  2of5_reader
+  code_93_reader
+  code_32_reader
+}
 ```
