@@ -39,6 +39,8 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ⚠️ This project is a proof of concept and is not intended for immediate production use. It serves as a starting point, offering guidance on how you can develop something similar.
 
+⚠️ iOS devices restrict activities that don't use HTTPS, which means it won't function properly during development testing.
+
 ⚠️ This project is free for everyone to use without the need for credit. However, please refrain from distributing it.
 
 ## Settings
