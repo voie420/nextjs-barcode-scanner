@@ -45,25 +45,9 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/bui
 
 ## Barcodes
 
-Depending on the barcodes you are trying to scan you can adjust the reader property of Quagga.
+All supported barcode readers.
 
-```ts
-Quagga.decodeSingle(
-  {
-    src: image as string,
-    decoder: {
-      readers: ['code_128_reader'], // Adjust this to what barcodes this service is supposed to read.
-    },
-    debug: false,
-  },
-  callback,
-);
 ```
-
-Supported barcode readers.
-
-```json
-{
   code_128_reader
   ean_reader
   ean_5_reader
@@ -78,5 +62,19 @@ Supported barcode readers.
   2of5_reader
   code_93_reader
   code_32_reader
-}
+```
+
+Depending on the barcodes you are trying to scan you can adjust the reader property of Quagga.
+
+```ts
+Quagga.decodeSingle(
+  {
+    src: image as string,
+    decoder: {
+      readers: ['code_128_reader'], // Adjust this to what barcodes this service is supposed to read.
+    },
+    debug: false,
+  },
+  callback,
+);
 ```
