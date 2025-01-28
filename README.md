@@ -34,3 +34,26 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+
+## Warnings
+
+⚠️ This project is a proof of concept and is not intended for immediate production use. It serves as a starting point, offering guidance on how you can develop something similar.
+
+⚠️ This project is free for everyone to use without the need for credit. However, please refrain from distributing it.
+
+## Settings
+
+Depending on the barcodes you are trying to scan you can adjust the reader property of Quagga.
+
+```ts
+Quagga.decodeSingle(
+  {
+    src: image as string,
+    decoder: {
+      readers: ['code_128_reader'], // Adjust this to what barcodes this service is supposed to read.
+    },
+    debug: false,
+  },
+  callback,
+);
+```
